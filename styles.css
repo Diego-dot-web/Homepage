@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-img {
+    background-image: url('sheeps.jpg');
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+    padding: 0.8rem;
+    box-shadow: #b4b4b4 0px 10px 10px;
+}
+
+.profile-img p {
+    position: absolute;
+    bottom: 1%;
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'Playfair Display';
+}
+
+.description {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.description h2 {
+    font-family: 'Playfair Display';
+    font-size: 2rem;
+    
+}
+
+.description p {
+    font-size: 1rem;
+    color: #757575;
+}
+
+.description img {
+    width: auto;
+    height: 20px;
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+main {
+    padding: 2rem;
+    margin-top:3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: #b4b4b4 0px 6px 10px;
+    margin-bottom: 4rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+    margin-bottom: 2rem;
+}
+
+.project-image {
+    background-image: url('project-image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 20rem;
+}
+
+main h3 {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display';
+}
+
+main p {
+    font-size: 1rem;
+    text-wrap: pretty;
+    color: #757575;
+    margin-bottom: 64px;
+}
+
+main img,
+main svg {
+    width: auto;
+    height: 20px;
+    box-sizing: content-box;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header {
+    position: relative;
+}
+
+.profile-img::before {
+    content: "";
+    width: calc(100vw* 2);
+    height: 100vh;
+    background-color: rgb(0, 162, 255);
+    box-shadow: #757575 0px 6px 10px;
+    transform-origin: top left;
+    transform: rotate(-29deg);
+    position: absolute;
+    top: -33vh;
+    left: -110vw;
+    z-index: -1;
+}
